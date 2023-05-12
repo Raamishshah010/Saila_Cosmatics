@@ -24,11 +24,11 @@
 
         <!-- headerMid -->
         <header class="header">
-            <div class="container-fluid">
+            <div class="container">
 
                 <div class="sidebar">
-                        <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                            <i class='bx bx-menu'></i>
+                        <button class="btn btn-custom toggleBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <span class="menuIcon"> <i class='bx bx-menu'></i></span>
                         </button>
                         
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -55,24 +55,80 @@
                 </div>
 
                 <div class="navLogo">
-                    <h1>Saila Cosmatics</h1>
+                    <img src="./assets/images/logo.svg" alt="">
                 </div>
 
                 <div class="shoppingCart">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
-
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    ...
-                </div>
-                </div>
+                    <!-- <span class="cartCount">1</span>
+                    <img src="./assets/images/shopping-cart.png" alt=""> -->
                 </div>
             </div>
         </header>
+
+        <div class="headerBottom">
+            <div class="container">
+                <div class="customNavbar">
+
+                    <div class="customNavbarLink active">
+                        <a href="">Home</a>
+                    </div>
+
+                    <div class="customNavbarLink">
+                        <a href="">Shop</a>
+                    </div>
+
+                    <div class="customNavbarLink">
+                        <a href="">About Saila</a>
+                    </div>
+
+                    <div class="customNavbarLink">
+                        <a href="">Contact</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="imgContainer">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1187&q=80" class="d-block w-100" alt="...">
+                        </div>
+
+                        <div class="carouselData">
+                            <h5>Introducing The new and modern packaging</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imgContainer">
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1187&q=80" class="d-block w-100" alt="...">
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imgContainer">
+
+                            <img src="https://images.unsplash.com/photo-1512207855369-643452a63d46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1083&q=80" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+        </section>
         
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>

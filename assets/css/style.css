@@ -1,30 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
-:root{
+:root {
     --primaryColor: #212121;
 
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-html{
+html {
     font-family: 'Open Sans', sans-serif;
     font-size: 62.5%;
 
 }
-body{
-background-color: #fafafa;
+
+body {
+    background-color: #fafafa;
+}
+
+
+.toggleBtn {
+    display: none !important;
 }
 
 
 /* headerTop */
 
-.headerTop{
+.headerTop {
     background-color: var(--primaryColor);
     padding-top: 1rem;
     padding-bottom: .2rem;
@@ -35,4 +41,133 @@ background-color: #fafafa;
     color: #fafafa;
     font-size: 1.2rem;
     letter-spacing: .4rem
+}
+
+.header {
+    margin-top: 2rem;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.header .sidebar {
+    font-size: 2rem
+}
+
+.header .sidebar .menuIcon {
+    font-size: 2rem
+}
+
+.header .navLogo img {
+    width: 70px;
+}
+
+.header .shoppingCart {
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.header .shoppingCart .cartCount {
+    position: absolute;
+    font-size: 1.3rem;
+    right: -20%;
+    top: -30%;
+    transform: translate(-15%, -55%);
+    width: 20px;
+    height: 20px;
+    padding: 1rem;
+    border-radius: 50%;
+    color: var(--primaryColor);
+    text-align: center;
+}
+
+.header .shoppingCart img {
+    width: 30px;
+}
+
+.headerBottom {
+    margin-top: 2rem;
+}
+
+.headerBottom .customNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 1.5rem;
+}
+
+.headerBottom .customNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e4e4e4;
+    text-transform: uppercase;
+}
+
+
+.headerBottom .customNavbar .customNavbarLink.active {
+    position: relative;
+}
+
+.headerBottom .customNavbar .customNavbarLink.active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: goldenrod;
+    bottom: -2rem;
+    left: 0;
+}
+
+.headerBottom .customNavbar .customNavbarLink a {
+    text-decoration: none;
+    color: var(--primaryColor);
+    font-weight: 400;
+}
+
+
+
+
+
+
+/* hero */
+
+.hero {
+    margin-top: 2rem;
+}
+
+.hero .carousel-item {
+    height: 70vh;
+    position: relative;
+}
+
+.hero .carousel-item .imgContainer {
+    position: relative;
+}
+
+.hero .carousel-item .imgContainer::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #21212162;
+    top: 0;
+    left: 0;
+    
+}
+
+.hero .carousel-item .carouselData {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
