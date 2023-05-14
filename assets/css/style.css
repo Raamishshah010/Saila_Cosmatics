@@ -85,6 +85,13 @@ body {
     text-align: center;
 }
 
+.cartText{
+    background-color: goldenrod;
+    padding: .1rem .5rem;
+    border-radius: 50%;
+    color: #fff;
+}
+
 .header .shoppingCart img {
     width: 30px;
 }
@@ -158,7 +165,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #21212162;
+    background: linear-gradient(to top , #212121 , #eeeeee1b);
     top: 0;
     left: 0;
     
@@ -170,4 +177,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+}
+
+.feature{
+    margin-top: 6rem;
+}
+
+.feature h1 {
+    font-weight: 400;
+    color: var(--primaryColor);
+    margin-bottom: 6rem;
 }
